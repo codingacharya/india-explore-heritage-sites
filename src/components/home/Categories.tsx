@@ -1,13 +1,13 @@
 
 import { categories } from '@/data/sites';
-import { Temple, Landmark } from 'lucide-react';
+import { Landmark, Building, Castle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Categories = () => {
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'temple':
-        return <Temple className="h-8 w-8" />;
+        return <Building className="h-8 w-8" />; // Changed from Temple to Building
       case 'landmark':
       default:
         return <Landmark className="h-8 w-8" />;
